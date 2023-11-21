@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chris Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleNavLink.css">
+    <link rel="stylesheet" href="styleFooter.css">
+    <link rel="stylesheet" href="styleProfile.css">
+    <link rel="stylesheet" href="styleSkill.css">
+    <!-- <link rel="stylesheet" href="styleEducation.css"> -->
+    <link rel="stylesheet" href="styleProject.css">
+
+    <script src="https://kit.fontawesome.com/8c9e72e8f8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- NAVBAR SECTION  -->
+    <nav>
+        <div id="color-theme-div">
+            <button type="button" class="color-theme-button" id="theme-button-dark" onclick="dark()"></button>
+            <button type="button" class="color-theme-button" id="theme-button-light" onclick="light()"></button>
+        </div>
+
+        <div class="toggle-button-div">
+            <button type="button" id="button-toggle" class="button-toggle  button">
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+            <button type="button" id="button-toggle2" class="button-toggle2   button">
+
+                <i class="fa-solid fa-x"></i>
+            </button>
+        </div>
+
+
+
+    </nav>
+    <section id="links" class="links">
+        <ul class="redirect-link " id="redirect">
+
+            <li class="link-li"><a href="">
+                    <i class="fa-solid fa-2xl fa-house "></i>
+                </a></li>
+            <li class="link-li"><a href="#education">
+                    <i class="fa-solid  fa-xl fa-user-graduate"></i>
+                </a></li>
+            <li class="link-li"><a href="#skill">
+                    <i class="fa-solid  fa-xl fa-star"></i>
+                </a></li>
+            <li class="link-li"><a href="#certification">
+                    <i class="fa-solid  fa-xl fa-award"></i>
+                </a></li>
+            <li class="link-li"><a href="#project">
+                    <i class="fa-solid  fa-xl fa-diagram-project"></i>
+                </a></li>
+            <li class="link-li"><a href="#footer">
+                    <i class="fa-solid  fa-xl fa-user"></i>
+                </a></li>
+        </ul>
+    </section>
+
+    <!-- PROFILE SECTION -->
+    <section id="profile">
+        <div class="profile-div hidden">
+            <img src=".\images\profile.jpg" alt="profile">
+
+        </div>
+        <div class="profile-text">
+            <p>CHRIS DSOUZA</p>
+            <a href="" download=".\assets\chrisResume.pdf">
+                <button type="submit" class="resume-button">RESUME</button>
+            </a>
+
+        </div>
+    </section>
+
+
+
+    <!-- PROJECT SECTION -->
+    <section id="project">
+        <h2> <span>PROJECTS ~ some cool stuff</span></h2>
+        <div class="project-grid">
+            <div class="project-div hidden" id="project1">
+
+                <div class="svg-div"> <i class="fa-solid fa-2xl fa-cat"></i></div>
+                <div class="text-section hidden">
+                    <span>CAT IMAGE GENERATOR</span>
+                    <p>Website made using React to generate random cat Images.
+                        Effortlessly browse through random cat images with two custom themes
+                        and a footer section to contact me.
+                    </p>
+
+                    <button type="submit" class="resume-button hidden">Visit</button>
+                </div>
+            </div>
+
+            <div class="project-div hidden" id="project2">
+
+                <div class="svg-div"><i class="fa-solid fa-2xl fa-calculator"></i></div>
+                <div class="text-section hidden">
+                    <span>JS CALCULATOR</span>
+                    <p>Functional Calculator created using JavaScript
+                    </p>
+
+                    <button type="submit" class="resume-button hidden">Visit</button>
+                </div>
+            </div>
+
+            <div class="project-div hidden" id="project12">
+
+
+                <div class="text-section hidden">
+                    <span>CAT IMAGE GENERATOR</span>
+                    <p>Website made using React to generate random cat Images.
+                        Effortlessly browse through random cat images with two custom themes
+                        and a footer section to contact me.
+                    </p>
+
+                    <button type="submit" class="resume-button hidden" onclick="opacityChange()">Visit</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SKILL SECTION -->
+    <section id="skill">
+        <div class="skill-div1 hidden">
+            <div class="timeline">
+                <div class="icons">
+                    <i class="fa-brands fa-2xl fa-html5 r-img"></i>
+                    <i class="fa-brands  fa-2xl fa-css3-alt l-img"></i>
+                    <i class="fa-brands fa-2xl  fa-js r-img"></i>
+                    <i class="fa-brands  fa-2xl fa-react l-img"></i>
+                    <i class="fa-solid  fa-2xl fa-c l-img"></i>
+                    <i class="fa-brands fa-2xl  fa-python r-img"></i>
+                    <i class="fa-solid  fa-2xl fa-code r-img"></i>
+                </div>
+            </div>
+        </div>
+        <div class="skill-div2">
+            <div id="skill1" class="skillbox">
+                <h2>WEB DEVELOPMENT</h2>
+                <small>HTML, CSS, JS, REACT</small>
+            </div>
+            <div id="skill2" class="skillbox">
+                <h2>LANGUAGES</h2>
+                <small>C, C++, PYTHON</small>
+            </div>
+            <div id="skill3" class="skillbox">
+                <h2>DATABASES</h2>
+                <small>MySQL, MongoDB</small>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer id="footer" class="hidden">
+        <div id="footer-div1" class="footer-div">
+            <ul>
+                <li><a href=''>
+                        <i class="fa-brands  fa-2xl fa-square-instagram"></i>
+                    </a></li>
+                <li><a href=''>
+                        <i class="fa-brands  fa-2xl fa-github"></i>
+                    </a></li>
+                <li><a href=''>
+                        <i class="fa-brands  fa-2xl fa-linkedin"></i>
+                    </a></li>
+            </ul>
+        </div>
+        <div id="footer-div2" class="footer-div">
+            <P>Made using HTML, CSS, JS</P>
+            <P><i class="fa-solid fa-envelope"></i> chrisdsouza30@gmail.com</P>
+        </div>
+        <div id="footer-div3" class="footer-div">
+            Copyrights reserved '23
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

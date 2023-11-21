@@ -1,0 +1,116 @@
+@import "style.css";
+
+nav {
+    background-color: var(--color-neutral1);
+   
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 12;
+
+}
+
+#color-theme-div {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    margin: 0.2rem;
+}
+
+.color-theme-button {
+    padding: 1rem;
+    height: 90%;
+}
+.color-theme-button:hover{
+    cursor: pointer;
+}
+#theme-button-dark {
+    background-image: linear-gradient(70deg, black,rgb(181, 20, 47));
+}
+
+#theme-button-light {
+    background-image: linear-gradient(70deg, blue, rgb(190, 170, 170));
+}
+
+/* Section Link */
+.links {
+    display: none;
+border: 1px solid var(--color-neutraltext);
+    list-style: none;
+    gap: 2rem;
+    position: sticky;
+    left: 0;
+    right: 0;
+    top: 51.3px;
+    z-index: 10;
+}
+
+#cross-toggle {
+
+    display: none;
+}
+
+.toggle-button-div {
+    display: flex;
+}
+
+.button {
+    padding: 1rem;
+    background-color: var(--color-neutraltext);
+    cursor: pointer;
+}
+
+.button-toggle2 {
+    display: none;
+    height: 51.2px;
+    width: 46.85px;
+}
+
+.active {
+    display: flex;
+
+}
+
+.activerev {
+    display: none;
+}
+
+#redirect {
+    width: 100%;
+
+    list-style: none;
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+
+    place-items: center;
+    background-color: var(--color-neutral1);
+}
+
+#redirect>li {
+    margin: 1.5rem;
+  
+}
+#redirect>li{
+    cursor: pointer;
+}
+.redirect-link>li>a>svg{
+    color: var(--color-neutral5);
+}
+
+#redirect>li:nth-child(1){
+    cursor: none;
+    >a{
+      cursor: default;
+    }
+}
+
+@media (min-width:0px) and (max-width:425px) {
+    #redirect {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}

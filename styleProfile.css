@@ -1,0 +1,49 @@
+@import "style.css";
+#profile{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 8rem 0;
+    background-image: linear-gradient(to bottom, var(--color-neutral1) 25%, var(--color-neutraltext));
+    text-align: center;
+}
+.profile-div{
+    height: 16rem;
+    width: 16rem;
+   
+    border-radius: 50%;
+    overflow: hidden;
+
+    position: relative;
+    top: 5rem;
+    border-bottom: 5px solid wheat;
+    
+}
+
+.profile-div>img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.resume-button{
+   
+    cursor: pointer;
+    padding: 0.5rem;
+    letter-spacing: 0.2rem;
+    border-radius: 0.9rem;
+    color: var(--color-neutraltext);
+    background-color: var(--color-neutral1);
+    border: 1px solid var(--color-neutral2);
+}
+.profile-text>p{
+    font-size: 2rem;
+    letter-spacing: 0.30rem;
+    line-height: 2;
+}
+.profile-text{
+    width: 100%;
+    border-top: 4px solid wheat;
+    padding-top: 5rem;
+}
