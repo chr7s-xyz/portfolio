@@ -1,16 +1,17 @@
 @import "style.css";
 #skill{
+    
     display: flex;
     width: 100%;
     height: 40rem;
-    border: 2px solid red;
+    
 }
 .skill-div1{
  width: 30%;
 
 }
 .timeline{
-border: 2px solid grey;
+border: 2px solid var(--color-neutral5);
 width: 100%;
 height: 100%;
 display: flex;
@@ -44,6 +45,7 @@ justify-content: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 2rem;
 }
 .skillbox{
@@ -53,11 +55,18 @@ justify-content: center;
     margin: 0.8rem 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
    text-align: center;
+   gap: 1rem;
+   word-spacing: 0.4rem;
 }
-
+.skillbox>h2{
+    color: var(--color-neutral1);
+}
+.skillbox>small{
+    color: var(--color-neutral1);
+}
 @media (min-width:0px) and (max-width:396px) {
     #skill{
         flex-direction: column;

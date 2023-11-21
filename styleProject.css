@@ -1,49 +1,60 @@
 @import "style.css";
-#project{
+
+#project {
     padding: 7rem 0;
 }
-#project>h2{
- padding: 2rem 0;
- text-align: center;
- letter-spacing: 0.5rem;
+
+#project>h2 {
+    padding: 2rem 0;
+    text-align: center;
+    letter-spacing: 0.5rem;
     word-spacing: 0.5rem;
     line-height: 2rem;
     color: var(--color-neutraltext);
 }
 
-.project-grid{
+.project-grid {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     place-items: center;
 }
 
-.svg-div{
+.svg-div {
     grid-column: 1 /2;
     grid-row: 1/3;
     margin-left: 1.1rem;
 }
-.svg-div>svg{
+
+.svg-div>svg {
     /* color: goldenrod; */
-background: linear-gradient(to left,var(--color-neutraltext),var(--color-neutral4));
---webkit-text-fill-color:transparent;
---webkit-background-clip: text;
-padding: 1rem;
-border-radius: 50%;
-aspect-ratio: 1/1;
-animation: rotate 1s infinite;
-animation-timing-function: linear;
+    background: linear-gradient(to left, var(--color-neutraltext), var(--color-neutral4));
+    --webkit-text-fill-color: transparent;
+    --webkit-background-clip: text;
+    padding: 1rem;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    animation: rotate 1s infinite;
+    animation-timing-function: linear;
 
 }
-.svg-div>svg:hover{
-    animation: rotate 1s ;
+
+.svg-div>svg:hover {
+    animation: rotate 1s;
 }
+
 @keyframes rotate {
-   
-    from{transform: rotate(-360deg);}
-    to{transform: rotate(360deg);}
- 
- }
-.project-div{
+
+    from {
+        transform: rotate(-360deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+.project-div {
     border-radius: 3rem;
     height: 95%;
     width: 90%;
@@ -52,11 +63,11 @@ animation-timing-function: linear;
     display: grid;
     place-items: center;
     grid-template-columns: 0.2fr 1fr;
-    grid-template-rows: 0.5fr 0.5fr ;
+    grid-template-rows: 0.5fr 0.5fr;
 }
 
-.text-section{
-   
+.text-section {
+
     height: 100%;
     grid-column: 2 /3;
     grid-row: 1/3;
@@ -67,27 +78,42 @@ animation-timing-function: linear;
     justify-content: space-evenly;
 
 }
-.text-section>span{
-color: var(--color-neutraltext);
-font-size: 1.4rem;
+
+.text-section>span {
+    color: var(--color-neutraltext);
+    font-size: 1.4rem;
     letter-spacing: 0.1rem;
     word-spacing: 0.3rem;
     margin: 1rem;
 }
-.text-section>p{
-color: var(--color-neutral4);
-margin: 0 1rem;
-text-align: center;
-letter-spacing: 0.1rem;
-word-spacing: 0.5rem;
+
+.text-section>p {
+    color: var(--color-neutral4);
+    margin: 0 1rem;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.5rem;
 }
-.text-section>button{
+
+.text-section>button {
     margin-top: 1rem;
+    background-color: var(--color-neutral4);
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.7rem;
+    color: var(--color-neutral5);
 }
+
+.text-section>button:hover {
+    margin-top: 1.1rem;
+    box-shadow: var(--color-neutral5) 0px 3px 1px;
+}
+
 @media (min-width:0px) and (max-width:685px) {
-    .project-grid{
+    .project-grid {
         display: grid;
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
         place-items: center;
     }
 }

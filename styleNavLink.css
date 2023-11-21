@@ -98,7 +98,7 @@ border: 1px solid var(--color-neutraltext);
     cursor: pointer;
 }
 .redirect-link>li>a>svg{
-    color: var(--color-neutral5);
+    color: var(--color-neutral4);
 }
 
 #redirect>li:nth-child(1){
