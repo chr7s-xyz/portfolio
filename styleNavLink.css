@@ -35,6 +35,12 @@ nav {
     background-image: linear-gradient(70deg, blue, rgb(190, 170, 170));
 }
 
+#button-toggle>svg{
+    color: var(--color-neutral4);
+}
+#button-toggle2>svg{
+    color: var(--color-neutral4);
+}
 /* Section Link */
 .links {
     display: none;
