@@ -1,0 +1,56 @@
+@import "style.css";
+#certification{
+    padding-top: 2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+   background-color: var(--color-neutral1);
+   letter-spacing: 0.2rem;
+   border: 1px solid var(--color-neutraltext);
+   align-items: center;
+}
+#certification>h2{
+    letter-spacing: 0.2rem;
+    color: var(--color-neutraltext);
+}
+.certificate-box{
+    height: 80%;
+    width: 90%;
+    border: 2px solid var(--color-neutral1);
+    text-align: center;
+    margin-top: 2rem;
+}
+.certificate-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    column-gap: 1rem;
+    min-height: 32rem;
+    background-color: var(--color-neutral4);
+}
+.certificate-sub{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.certificate-box>svg{
+    position: relative;
+    top: -2rem;
+    font-size: 4rem;
+    color: var(--color-neutraltext);
+}
+
+@media (min-width:0px) and (max-width:550px) {
+    .certificate-grid{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(6,1fr);
+        column-gap: 1rem;
+        min-height: 32rem;
+        background-color: var(--color-neutral4);
+    }
+    #certificate6{
+        margin-bottom: 2rem;
+    }
+}

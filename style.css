@@ -36,6 +36,10 @@ html{
     }
 }
 
+.education-text{
+    transition-delay: 300ms;
+}
+
 
 .project-div:nth-child(2){
     transition-delay: 200ms;

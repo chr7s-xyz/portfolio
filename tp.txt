@@ -41,7 +41,8 @@
 
 
 
-  skill section<div id="skills-div" class="grid-container hidden">
+  skill section
+  <div id="skills-div" class="grid-container hidden">
    <div id="div-html" class="div grid-item ">
   <img src="./images/htmlplogo.png" alt="">
    </div>
