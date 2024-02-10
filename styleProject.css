@@ -56,7 +56,7 @@
 
 .project-div {
     border-radius: 3rem;
-    height: 95%;
+    height: 20rem;
     width: 90%;
     border: 3px solid var(--color-neutraltext);
     cursor: pointer;
