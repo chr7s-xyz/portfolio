@@ -2,6 +2,7 @@
 
 #project {
     padding: 7rem 0;
+    margin-top: 7rem;
 }
 
 #project>h2 {
@@ -11,6 +12,12 @@
     word-spacing: 0.5rem;
     line-height: 2rem;
     color: var(--color-neutraltext);
+
+    font-family: "Reddit Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 1rem;
+    font-style: normal;
+    
 }
 
 .project-grid {
@@ -64,6 +71,8 @@
     place-items: center;
     grid-template-columns: 0.2fr 1fr;
     grid-template-rows: 0.5fr 0.5fr;
+
+    user-select: none;
 }
 
 .text-section {
@@ -108,7 +117,7 @@
 
 .text-section>button:hover {
     margin-top: 1.1rem;
-    box-shadow: var(--color-neutral5) 0px 3px 1px;
+    box-shadow: var(--color-neutral5) 0px 1px 1px;
 }
 
 @media (min-width:0px) and (max-width:1025px) {

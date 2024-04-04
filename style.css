@@ -50,3 +50,10 @@ html{
 .project-div:nth-child(4){
     transition-delay: 800ms;
 }
+
+.quicksand-unique{
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+   
+    font-style: normal;
+  }

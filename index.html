@@ -14,7 +14,28 @@
     <link rel="stylesheet" href="styleProject.css">
     <link rel="stylesheet" href="styleCertification.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Reddit+Mono:wght@200..900&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
     <script src="https://kit.fontawesome.com/8c9e72e8f8.js" crossorigin="anonymous"></script>
+    <script>
+        function redirectToJSCalculator(){
+            window.open("https://chr7s-xyz.github.io/JS-Calculator/");
+        }
+
+        function redirectToWebMapping(){
+            window.open("https://chr7s-xyz.github.io/WebMapping/");
+        }
+
+        function redirectToCatGenerator(){
+            window.open("https://catimage-generator-chris.netlify.app/");
+        }
+    </script>
 </head>
 
 <body>
@@ -50,7 +71,7 @@
             <li class="link-li"><a href="#education">
                     <i class="fa-solid  fa-xl fa-user-graduate"></i>
                 </a></li>
-            <li class="link-li"><a href="#skill">
+            <li class="link-li"><a href="#skill-h2">
                     <i class="fa-solid  fa-xl fa-star"></i>
                 </a></li>
             <li class="link-li"><a href="#certification">
@@ -72,7 +93,7 @@
 
         </div>
         <div class="profile-text">
-            <p>CHRIS DSOUZA</p>
+            <p class="quicksand-unique">CHRIS DSOUZA</p>
             <a href="" download=".\assets\chrisResume.pdf">
                 <button type="submit" class="resume-button">RESUME</button>
             </a>
@@ -87,23 +108,23 @@
             <div class="imgdiv hidden">
                 <img src=".\images\school.jpg">
             </div>
-            <div class="education-text hidden">
+            <div class="education-text hidden quicksand-unique">
                 <span>ST LOUIS HIGH SCHOOL</span>
                 <p>QUALIFICATIONS : SSC</p>
                 <p>GRADE : 90.80</p>
                 <p>YEAR : 2019-20</p>
-                <p><a href=''><i class="fa-solid fa-2xl fa-location"></i></a></p>
+                <p><a href='https://stlouischurchdahisar.in/'><i class="fa-solid fa-2xl fa-location"></i></a></p>
             </div>
 
             <div class="imgdiv hidden">
                 <img src=".\images\college.jpg">
             </div>
-            <div class="education-text hidden">
-                <span>ST ANDREWS COLLEGE</span>
+            <div class="education-text hidden quicksand-unique">
+                <span>ST ANDREW'S COLLEGE</span>
                 <p>QUALIFICATIONS : HSC</p>
                 <p>GRADE : 77.33</p>
                 <p>YEAR : 2021-22</p>
-                <p><a href=''><i class="fa-solid fa-2xl fa-location"></i></a></p>
+                <p><a href='https://standrewscollege.ac.in/'><i class="fa-solid fa-2xl fa-location"></i></a></p>
             </div>
 
         </div>
@@ -116,24 +137,24 @@
         <h2>CERTIFICATIONS ~ glory achieved</h2>
         <h4></h4>
         <div class="certificate-box hidden">
-            <div class="certificate-grid">
+            <div class="certificate-grid quicksand-unique">
                 <div id="certificate1" class="certificate-sub">
-                    Intro to Python Programming
+                    Introduction to Python Programming
                 </div>
                 <div id="certificate2" class="certificate-sub">
-                    Intro to Python Programming
+                    Mobile App Development with Flutter
                 </div>
                 <div id="certificate3" class="certificate-sub">
-                    Intro to Python Programming
+                    Introduction to Cybersecurity by Cisco
                 </div>
                 <div id="certificate4" class="certificate-sub">
-                    Intro to Python Programming
+                    Digital Marketing Foundation CDMA
                 </div>
                 <div id="certificate5" class="certificate-sub">
-                    Intro to Python Programming
+                    Presentation Skills by TCS
                 </div>
                 <div id="certificate6" class="certificate-sub">
-                    Intro to Python Programming
+                    Fundamentals of Full Stack Development.
                 </div>
             </div>
             <i class="fa-solid  fa-xl fa-medal"></i>
@@ -151,12 +172,12 @@
                 <div class="svg-div"> <i class="fa-solid fa-2xl fa-cat"></i></div>
                 <div class="text-section hidden">
                     <span>CAT IMAGE GENERATOR</span>
-                    <p>Website made using React to generate random cat Images.
+                    <p class="quicksand-unique">Website made using React to generate random cat Images.
                         Effortlessly browse through random cat images with two custom themes
                         and a footer section to contact me.
                     </p>
 
-                    <button type="submit" class="resume-button hidden">VIEW</button>
+                    <button type="submit" onclick="redirectToCatGenerator()" class="resume-button hidden">VIEW</button>
                 </div>
             </div>
 
@@ -165,10 +186,10 @@
                 <div class="svg-div"><i class="fa-solid fa-2xl fa-calculator"></i></div>
                 <div class="text-section hidden">
                     <span>JS CALCULATOR</span>
-                    <p>Functional Calculator created using JavaScript
+                    <p class="quicksand-unique">Functional Calculator created using JavaScript
                     </p>
 
-                    <button type="submit" class="resume-button hidden">VIEW</button>
+                    <button type="submit" onclick="redirectToJSCalculator()" class="resume-button hidden">VIEW</button>
                 </div>
             </div>
 
@@ -177,10 +198,10 @@
                 <div class="svg-div"><i class="fa-solid fa-2xl fa-map"></i></div>
                 <div class="text-section hidden">
                     <span>Web Mapping</span>
-                    <p>An HTML website showing map containing markers on ancient and new temples in India, etc.
+                    <p class="quicksand-unique">An HTML website showing map containing markers on ancient and new temples in India made using Python : folium and pandas.
                     </p>
 
-                    <button type="submit" class="resume-button hidden">VIEW</button>
+                    <button type="submit" onclick="redirectToWebMapping()" class="resume-button hidden">VIEW</button>
                 </div>
             </div>
 
@@ -188,7 +209,9 @@
     </section>
 
     <!-- SKILL SECTION -->
+    <h2 id="skill-h2">SKILLS ~ Training my way to success</h2>
     <section id="skill">
+        
         <div class="skill-div1 hidden">
             <div class="timeline">
                 <div class="icons">
@@ -226,13 +249,13 @@
     <footer id="footer" class="hidden">
         <div id="footer-div1" class="footer-div">
             <ul>
-                <li><a href=''>
+                <li><a href='https://www.instagram.com/chr7s.dsouza/'>
                         <i class="fa-brands  fa-2xl fa-square-instagram"></i>
                     </a></li>
-                <li><a href=''>
+                <li><a href='https://github.com/chr7s-xyz'>
                         <i class="fa-brands  fa-2xl fa-github"></i>
                     </a></li>
-                <li><a href=''>
+                <li><a href='https://www.linkedin.com/in/chrisdsouza30'>
                         <i class="fa-brands  fa-2xl fa-linkedin"></i>
                     </a></li>
             </ul>
