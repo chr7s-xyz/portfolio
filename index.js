@@ -22,7 +22,7 @@ root.style.setProperty('--color-neutral1','#CDB4DB');
 root.style.setProperty('--color-neutral2','#FFC8DD');
 root.style.setProperty('--color-neutral3','#FFAFCC');
 root.style.setProperty('--color-neutral4','#023047');
-root.style.setProperty('--color-neutral5','#A2D2FF');
+root.style.setProperty('--color-neutral5','#218ffc');
 root.style.setProperty('--color-neutraltext','#03071E');
 
 console.log(document.querySelectorAll('svg'))

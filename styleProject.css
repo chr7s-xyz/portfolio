@@ -73,6 +73,7 @@
     grid-template-rows: 0.5fr 0.5fr;
 
     user-select: none;
+    margin-bottom: 0.4rem;
 }
 
 .text-section {
